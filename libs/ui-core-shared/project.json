@@ -1,0 +1,9 @@
+{
+  "name": "ui-core-shared",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui-core-shared/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project ui-core-shared --web",
+  "targets": {}
+}

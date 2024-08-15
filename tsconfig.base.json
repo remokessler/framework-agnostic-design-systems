@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "ui-core-atoms": [
+        "libs/ui-core-atoms/src/index.ts"
+      ],
+      "ui-core-shared": [
+        "libs/ui-core-shared/src/index.ts"
+      ],
+      "ui-core-storybook": [
+        "libs/ui-core-storybook/src/index.ts"
+      ],
+      "ui-core-wc-atoms": [
+        "libs/ui-core-wc-atoms/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}

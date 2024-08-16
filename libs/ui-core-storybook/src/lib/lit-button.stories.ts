@@ -1,17 +1,17 @@
 import { Meta, StoryObj } from '@storybook/angular';
-import { LitWrapperComponent } from './lit-wrapper-component';
+import { BuiLitButtonComponent } from 'ui-core-wc-atoms';
 
-const meta: Meta<LitWrapperComponent> = {
+const meta: Meta<BuiLitButtonComponent> = {
   title: 'Lit Atoms/Button',
-  component: LitWrapperComponent,
+  component: BuiLitButtonComponent,
 };
 
 export default meta;
 
-export const Default: StoryObj<LitWrapperComponent> = {
+export const Default: StoryObj<BuiLitButtonComponent> = {
   render: () => {
     return {
-      template: `<bui-lit-wrapper><bui-lit-button></bui-lit-button></bui-lit-wrapper>`,
+      template: `<bui-lit-button></bui-lit-button>`,
     };
   },
 };

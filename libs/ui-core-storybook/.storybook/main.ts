@@ -1,15 +1,14 @@
 import type { StorybookConfig } from '@storybook/angular';
 // import {default as remarkGfm} from 'remark-gfm';
+// import 'ui-core-wc-atoms';
 
 const config: StorybookConfig = {
   stories: ['../**/*.stories.ts', '../**/*.mdx'],
   addons: ['@storybook/addon-essentials', '@storybook/addon-interactions'],
   framework: {
     name: '@storybook/angular',
-    options: {
-    },
+    options: {},
   },
-
 };
 
 export default config;

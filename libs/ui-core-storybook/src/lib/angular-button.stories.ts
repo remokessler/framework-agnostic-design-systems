@@ -9,10 +9,4 @@ const meta: Meta<BuiButtonComponent> = {
 
 export default meta;
 
-export const Default: StoryObj<BuiButtonComponent> = {
-  render: () => {
-    return {
-      template: `<bui-button></bui-button>`,
-    };
-  },
-};
+export const Default: StoryObj<BuiButtonComponent> = {};

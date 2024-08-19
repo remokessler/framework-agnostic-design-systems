@@ -6,11 +6,14 @@
   "prefix": "bui",
   "tags": [],
   "targets": {
-    "storybook": {
+    "serve": {
       "executor": "@storybook/angular:start-storybook",
       "options": {
         "port": 8800,
-        "configDir": "libs/ui-core-storybook/.storybook"
+        "configDir": "libs/ui-core-storybook/.storybook",
+        "styles": [
+          "libs/ui-core-storybook/.storybook/styles.scss"
+        ]
       },
       "configurations": {
         "ci": {

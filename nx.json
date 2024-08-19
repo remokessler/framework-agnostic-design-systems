@@ -18,10 +18,9 @@
     {
       "plugin": "@nx/storybook/plugin",
       "options": {
-        "serveStorybookTargetName": "storybook",
+        "serveStorybookTargetName": "serve",
         "buildStorybookTargetName": "build-storybook",
-        "testStorybookTargetName": "test-storybook",
-        "staticStorybookTargetName": "static-storybook"
+        "testStorybookTargetName": "test-storybook"
       }
     }
   ],
@@ -31,7 +30,24 @@
       "unitTestRunner": "jest"
     },
     "@nx/angular:component": {
-      "style": "css"
+      "style": "scss"
+    }
+  },
+  "targetDefaults": {
+    "@nx/angular:package": {
+      "cache": true,
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "default",
+        "^default"
+      ]
+    }
+  },
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": true
     }
   }
 }

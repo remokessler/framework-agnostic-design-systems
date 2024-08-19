@@ -2,6 +2,7 @@
 <project version="4">
   <component name="NxAngularConfigService" workspaceLocation="file://$PROJECT_DIR$/nx.json">
     <projects>
+      <project name="storybook-static" file="file://$PROJECT_DIR$/libs/ui-core-storybook/storybook-static/project.json" />
       <project name="ui-core-atoms" file="file://$PROJECT_DIR$/libs/ui-core-atoms/project.json" />
       <project name="ui-core-shared" file="file://$PROJECT_DIR$/libs/ui-core-shared/project.json" />
       <project name="ui-core-storybook" file="file://$PROJECT_DIR$/libs/ui-core-storybook/project.json" />

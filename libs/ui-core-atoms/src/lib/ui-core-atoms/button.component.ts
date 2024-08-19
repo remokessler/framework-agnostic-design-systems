@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -7,4 +7,10 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   templateUrl: './button.component.html',
 })
-export class BuiButtonComponent {}
+export class BuiButtonComponent {
+  public readonly message = input('Angular button was clicked!');
+
+  protected sendAlert(): void {
+    alert(this.message());
+  }
+}

@@ -1,5 +1,8 @@
 import type { StorybookConfig } from '@storybook/angular';
-// import {default as remarkGfm} from 'remark-gfm';
+// eslint-disable-next-line @nx/enforce-module-boundaries
+// import webpackConfig from '../../../webpack.config';
+// import { WebpackConfiguration } from 'webpack-cli';
+// import {default as remarkGfm} f rom 'remark-gfm';
 // import 'ui-core-wc-atoms';
 
 const config: StorybookConfig = {
@@ -9,6 +12,9 @@ const config: StorybookConfig = {
     name: '@storybook/angular',
     options: {},
   },
+  // webpackFinal: (finalConfig: WebpackConfiguration) => {
+  //   return webpackConfig;
+  // },
 };
 
 export default config;

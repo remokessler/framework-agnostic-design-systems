@@ -41,14 +41,8 @@ const config: StorybookConfig & StorybookConfigVite = {
       },
       resolve: {
         alias: {
-          'ui-core-wc-atoms': resolve(
-            __dirname,
-            '../../ui-core-wc-atoms/src/index.ts'
-          ),
-          'ui-core-atoms': resolve(
-            __dirname,
-            '../../ui-core-atoms/src/index.ts'
-          ),
+          'ui-core-wc-atoms': resolve(__dirname, '../../ui-core-wc-atoms/src/index.ts'),
+          'ui-core-atoms': resolve(__dirname, '../../ui-core-atoms/src/index.ts'),
         },
       },
       plugins: [angular({ jit: true, tsconfig: './.storybook/tsconfig.json' })],

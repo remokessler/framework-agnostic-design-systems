@@ -7,6 +7,8 @@ export class BuiLitButtonComponent extends LitElement {
   public version = 'STARTING';
 
   public override render() {
-    return html` <button @click=${() => alert(this.version)}>I'm a Lit-Button!</button>`;
+    return html`
+      <button @click=${() => alert(this.version)}>I'm a Lit-Button!</button>
+    `;
   }
 }

@@ -7,15 +7,17 @@
   "tags": [],
   "targets": {
     "storybook": {
-      "executor": "@storybook/angular:start-storybook",
+      "executor": "nx:run-commands",
       "options": {
-        "port": 8800,
-        "configDir": "libs/ui-core-storybook/.storybook"
-      },
-      "configurations": {
-        "ci": {
-          "quiet": false
-        }
+        "cwd": "libs/ui-core-storybook",
+        "command": "storybook dev --port 8800"
+      }
+    },
+    "build-storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/ui-core-storybook",
+        "command": "storybook build --output-dir ../../dist/storybook/my-app"
       }
     },
     "test": {

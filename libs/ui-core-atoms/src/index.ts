@@ -1,1 +1,1 @@
-export * from './lib/ui-core-atoms/button.component';
+export { BuiButtonComponent } from './lib/ui-core-atoms/button.component';

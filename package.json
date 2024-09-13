@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "sb": "npx nx run ui-core-storybook:storybook"
+    "sb": "npx nx run ui-core-storybook:storybook",
+    "format": "npx nx format:write"
   },
   "private": true,
   "devDependencies": {

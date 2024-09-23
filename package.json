@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "sb": "npx nx run ui-core-storybook:storybook",
-    "format": "npx nx format:write"
+    "format": "npx nx format:write",
+    "wdio": "wdio run ./wdio.conf.ts"
   },
   "private": true,
   "devDependencies": {
@@ -45,6 +46,10 @@
     "@typescript-eslint/eslint-plugin": "^7.16.0",
     "@typescript-eslint/parser": "^7.16.0",
     "@typescript-eslint/utils": "^7.16.0",
+    "@wdio/browser-runner": "^9.0.9",
+    "@wdio/cli": "^9.0.9",
+    "@wdio/globals": "^9.0.9",
+    "@wdio/mocha-framework": "^9.0.8",
     "eslint": "~8.57.0",
     "eslint-config-prettier": "^9.0.0",
     "http-server": "^14.1.1",
@@ -52,7 +57,7 @@
     "jest-environment-jsdom": "29.7.0",
     "jest-environment-node": "^29.4.1",
     "jest-preset-angular": "~14.1.0",
-    "lit": "^3.1.4",
+    "lit": "^3.2.0",
     "nx": "19.7.4",
     "prettier": "^2.6.2",
     "remark-gfm": "^4.0.0",

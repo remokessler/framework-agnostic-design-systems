@@ -20,9 +20,9 @@ const config: StorybookConfig & StorybookConfigVite = {
         viteConfigPath: undefined,
       },
     },
-
     disableWhatsNewNotifications: true,
   },
+
   async viteFinal(config: UserConfig) {
     // Merge custom configuration into the default config
     const { mergeConfig } = await import('vite');
@@ -41,8 +41,8 @@ const config: StorybookConfig & StorybookConfigVite = {
       },
       resolve: {
         alias: {
-          'ui-core-wc-atoms': resolve(__dirname, '../../ui-core-wc-atoms/src/index.ts'),
-          'ui-core-atoms': resolve(__dirname, '../../ui-core-atoms/src/index.ts'),
+          '@ui-core/elements-atoms': resolve(__dirname, '../../ui-core-elements-atoms/src/index.ts'),
+          '@ui-core/atoms': resolve(__dirname, '../../ui-core-atoms/src/index.ts'),
         },
       },
       plugins: [angular({ jit: true, tsconfig: './.storybook/tsconfig.json' })],

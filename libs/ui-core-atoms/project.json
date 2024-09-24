@@ -2,10 +2,26 @@
   "name": "ui-core-atoms",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/ui-core-atoms/src",
-  "prefix": "bui",
+  "prefix": "lib",
   "projectType": "library",
   "tags": [],
   "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/ui-core-atoms/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ui-core-atoms/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ui-core-atoms/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],

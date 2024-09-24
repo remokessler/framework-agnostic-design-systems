@@ -19,20 +19,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ui-core/atoms": [
+        "libs/ui-core-atoms/src/index.ts"
+      ],
+      "@ui-core/elements-atoms": [
+        "libs/ui-core-elements-atoms/src/index.ts"
+      ],
       "@ui-core/storybook": [
         "libs/ui-core-storybook/src/index.ts"
       ],
       "@ui-core/styles": [
         "libs/ui-core-styles/src/index.ts"
       ],
-      "ui-core-atoms": [
-        "libs/ui-core-atoms/src/index.ts"
-      ],
       "ui-core-shared": [
         "libs/ui-core-shared/src/index.ts"
-      ],
-      "ui-core-wc-atoms": [
-        "libs/ui-core-wc-atoms/src/index.ts"
       ]
     }
   },

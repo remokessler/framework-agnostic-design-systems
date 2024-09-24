@@ -1,9 +1,0 @@
-{
-  "name": "ui-core-wc-atoms",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/ui-core-wc-atoms/src",
-  "projectType": "library",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project ui-core-wc-atoms --web",
-  "targets": {}
-}

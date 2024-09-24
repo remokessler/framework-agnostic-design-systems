@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/angular';
-import { BuiLitButtonComponent } from 'ui-core-wc-atoms';
+import { BuiLitButtonComponent } from '@ui-core/elements-atoms';
 
 const meta: Meta<BuiLitButtonComponent> = {
   title: 'Lit Atoms/Button',

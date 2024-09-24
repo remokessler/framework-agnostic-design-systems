@@ -37,11 +37,18 @@
     "lint": {
       "executor": "@nx/eslint:lint"
     },
+    "build-styles": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/ui-core-storybook",
+        "command": ""
+      }
+    },
     "storybook": {
       "executor": "nx:run-commands",
       "options": {
         "cwd": "libs/ui-core-storybook",
-        "command": "storybook dev --port 8800"
+        "command": "tailwindcss -i ./.storybook/styles.css -o ./.storybook/tailwind.css -c tailwind.config.js -w & storybook dev --port 8800 && fg"
       }
     },
     "build-storybook": {

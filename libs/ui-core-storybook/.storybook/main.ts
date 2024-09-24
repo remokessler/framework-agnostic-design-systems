@@ -6,6 +6,8 @@ import { StorybookConfigVite } from '@storybook/builder-vite';
 const config: StorybookConfig & StorybookConfigVite = {
   stories: ['../**/*.stories.ts', '../**/*.mdx'],
 
+  staticDirs: ['../assets'],
+
   addons: [
     getAbsolutePath('@storybook/addon-essentials'),
     getAbsolutePath('@storybook/addon-interactions'),
@@ -45,7 +47,7 @@ const config: StorybookConfig & StorybookConfigVite = {
           '@ui-core/atoms': resolve(__dirname, '../../ui-core-atoms/src/index.ts'),
         },
       },
-      plugins: [angular({ jit: true, tsconfig: './.storybook/tsconfig.json' })],
+      plugins: [angular({ jit: true, tsconfig: './.storybook/tsconfig.json', include: ['./tailwind.css'] })],
     });
   },
 

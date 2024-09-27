@@ -47,7 +47,7 @@ const config: StorybookConfig & StorybookConfigVite = {
           '@ui-core/atoms': resolve(__dirname, '../../ui-core-atoms/src/index.ts'),
         },
       },
-      plugins: [angular({ jit: true, tsconfig: './.storybook/tsconfig.json', include: ['./tailwind.css'] })],
+      plugins: [angular({ jit: true, tsconfig: './.storybook/tsconfig.json', include: ['./tailwind.scss'] })],
     });
   },
 

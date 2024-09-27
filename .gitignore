@@ -132,3 +132,4 @@ dist
 #angular
 .angular
 .nx
+.verdaccio/

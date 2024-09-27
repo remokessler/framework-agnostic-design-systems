@@ -20,6 +20,12 @@ export default defineConfig({
   //  plugins: [ nxViteTsPaths() ],
   // },
 
+  css: {
+    postcss: {
+      plugins: [require('postcss-import'), require('tailwindcss'), require('autoprefixer')],
+    },
+  },
+
   // Configuration for building your library.
   // See: https://vitejs.dev/guide/build.html#library-mode
   build: {
@@ -28,6 +34,7 @@ export default defineConfig({
     reportCompressedSize: true,
     commonjsOptions: {
       transformMixedEsModules: true,
+      sourceMap: true,
     },
     lib: {
       // Could also be a dictionary or array of multiple entry points.

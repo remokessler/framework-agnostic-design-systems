@@ -1,0 +1,7 @@
+<details #accordion>
+  <summary (click)="toggleOpen($event)"
+           class="bui-bg-gray-100 bui-p-3 bui-cursor-pointer bui-border-b bui-border-b-gray-200 bui-select-none bui-text-red-500 hover:bui-bg-gray-200 active:bui-bg-gray-300">
+    <span class="bui-text-[black]">{{ title() }}</span>
+  </summary>
+  <ng-content></ng-content>
+</details>

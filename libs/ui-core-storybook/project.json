@@ -2,7 +2,7 @@
   "name": "ui-core-storybook",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/ui-core-storybook/src",
-  "prefix": "lib",
+  "prefix": "bui",
   "projectType": "library",
   "tags": [],
   "targets": {

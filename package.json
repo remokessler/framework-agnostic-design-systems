@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "sb": "npx nx run ui-core-storybook:storybook",
+    "test": "npx nx run test-app:serve",
     "format": "npx nx format:write",
     "build": "npx nx affected:build --base=main --parallel=8",
     "build:prod": "npx nx affected:build --base=main --parallel=8 --prod"
@@ -11,11 +12,12 @@
   "private": true,
   "devDependencies": {
     "@analogjs/vite-plugin-angular": "^1.8.0",
+    "@angular-devkit/build-angular": "~18.2.0",
     "@angular-devkit/core": "18.2.5",
     "@angular-devkit/schematics": "18.2.5",
-    "@angular-eslint/eslint-plugin": "^18.0.1",
-    "@angular-eslint/eslint-plugin-template": "^18.0.1",
-    "@angular-eslint/template-parser": "^18.0.1",
+    "@angular-eslint/eslint-plugin": "^18.3.0",
+    "@angular-eslint/eslint-plugin-template": "^18.3.0",
+    "@angular-eslint/template-parser": "^18.3.0",
     "@angular/cli": "18.2.5",
     "@angular/compiler-cli": "18.2.5",
     "@angular/language-service": "18.2.5",

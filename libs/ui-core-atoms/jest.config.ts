@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'ui-core-atoms',
+  displayName: 'button',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/libs/ui-core-atoms',
+  coverageDirectory: '../../coverage/libs/button',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

@@ -3,6 +3,7 @@
   <component name="NxAngularConfigService" workspaceLocation="file://$PROJECT_DIR$/nx.json">
     <projects>
       <project name="bsc-thesis" file="file://$PROJECT_DIR$/project.json" />
+      <project name="test-app" file="file://$PROJECT_DIR$/apps/test-app/project.json" />
       <project name="ui-core-atoms" file="file://$PROJECT_DIR$/libs/ui-core-atoms/project.json" />
       <project name="ui-core-elements-atoms" file="file://$PROJECT_DIR$/libs/ui-core-elements-atoms/project.json" />
       <project name="ui-core-shared" file="file://$PROJECT_DIR$/libs/ui-core-shared/project.json" />

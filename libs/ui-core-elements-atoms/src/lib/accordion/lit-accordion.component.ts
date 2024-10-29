@@ -24,7 +24,7 @@ export class BuiLitAccordionComponent extends LitElement {
     this._open = value;
     if (this._open) {
       this._accordion?.setAttribute('open', '');
-      this.onOpen(this.accordionTitle);
+      this.onOpen(this.accordionTitle); // to close all others
     } else {
       this._accordion?.removeAttribute('open');
     }

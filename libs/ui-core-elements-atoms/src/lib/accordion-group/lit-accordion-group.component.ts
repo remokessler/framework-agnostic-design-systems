@@ -13,12 +13,9 @@ export class BuiLitAccordionGroupComponent extends LitElement {
   }
 
   public override updated() {
-    console.log('updated');
     this._accordions = this.querySelectorAll<BuiLitAccordionComponent>('bui-lit-accordion') ?? null;
-    console.log(this._accordions);
     this._accordions?.forEach((a) => {
       a.onOpen = (accordionTitle: string) => this.closeAllOthers(accordionTitle);
-      console.log(a.accordionTitle, 'onOpen set');
     });
   }
 

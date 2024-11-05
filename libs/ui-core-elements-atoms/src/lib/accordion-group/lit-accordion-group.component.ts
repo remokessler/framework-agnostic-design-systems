@@ -15,22 +15,14 @@ export class BuiLitAccordionGroupComponent extends LitElement implements IAccord
   @state()
   public accordionContext = this;
 
-  public readonly accordions = [] as BuiLitAccordionComponent[];
-  private _accordions: NodeListOf<BuiLitAccordionComponent> | null = null;
+  public accordions = [] as BuiLitAccordionComponent[];
 
   constructor() {
     super();
   }
 
-  public override updated() {
-    this._accordions = this.querySelectorAll<BuiLitAccordionComponent>('bui-lit-accordion') ?? null;
-    this._accordions?.forEach((a) => {
-      a.onOpen = (accordionTitle: string) => this.closeAllOthers(accordionTitle);
-    });
-  }
-
   public closeAllOthers(accordionTitle: string | null): void {
-    this._accordions?.forEach((accordion) => {
+    this.accordions?.forEach((accordion) => {
       if (accordion.accordionTitle !== accordionTitle) {
         accordion.open = false;
       }

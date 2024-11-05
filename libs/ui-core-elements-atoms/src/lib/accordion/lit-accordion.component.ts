@@ -1,12 +1,18 @@
 import { html, LitElement, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import styles from '../../tailwind.scss?inline';
+import { consume } from '@lit/context';
+import { BuiLitAccordionGroupContext } from '../accordion-group/lit-accordion-group.component';
+import { IAccordionGroup } from '../accordion-group/IAccordionGroup';
 
 @customElement('bui-lit-accordion')
 export class BuiLitAccordionComponent extends LitElement {
   public static override styles = [unsafeCSS(styles)];
   @property()
   public accordionTitle = '';
+
+  @consume({ context: BuiLitAccordionGroupContext })
+  private _accordionGroup?: IAccordionGroup;
   private _accordion: HTMLDetailsElement | null = null;
 
   constructor() {
@@ -24,16 +30,17 @@ export class BuiLitAccordionComponent extends LitElement {
     this._open = value;
     if (this._open) {
       this._accordion?.setAttribute('open', '');
-      this.onOpen(this.accordionTitle); // to close all others
+      this._accordionGroup?.closeAllOthers(this.accordionTitle); // to close all others
     } else {
       this._accordion?.removeAttribute('open');
     }
   }
 
-  public onOpen: (accordionTitle: string) => void = () => undefined;
-
   public override firstUpdated() {
     this._accordion = this.shadowRoot?.getElementById('accordion') as HTMLDetailsElement;
+    if (this._accordionGroup) {
+      this._accordionGroup.accordions = [...(this._accordionGroup?.accordions ?? []), this];
+    }
     this.open = this._open; // hack to get the first update to also toggle the accordion on the first render.
   }
 

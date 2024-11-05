@@ -4,7 +4,12 @@ import { BuiButtonComponent } from '@ui-core/atoms';
 const meta: Meta<BuiButtonComponent> = {
   title: 'Angular Atoms/Button',
   component: BuiButtonComponent,
-  argTypes: {},
+  argTypes: {
+    text: { control: 'text' },
+  },
+  args: {
+    text: 'I am a Angular-Button',
+  },
 };
 
 export default meta;

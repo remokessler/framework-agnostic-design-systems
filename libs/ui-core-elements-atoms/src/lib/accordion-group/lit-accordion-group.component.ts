@@ -1,11 +1,21 @@
 import { html, LitElement, unsafeCSS } from 'lit';
-import { customElement } from 'lit/decorators.js';
+import { createContext, provide } from '@lit/context';
+import { customElement, state } from 'lit/decorators.js';
 import styles from '../../tailwind.scss?inline';
 import { BuiLitAccordionComponent } from '../accordion/lit-accordion.component';
+import { IAccordionGroup } from './IAccordionGroup';
+
+export const BuiLitAccordionGroupContext = createContext<IAccordionGroup>('AccordionGroup');
 
 @customElement('bui-lit-accordion-group')
-export class BuiLitAccordionGroupComponent extends LitElement {
+export class BuiLitAccordionGroupComponent extends LitElement implements IAccordionGroup {
   public static override styles = [unsafeCSS(styles)];
+
+  @provide({ context: BuiLitAccordionGroupContext })
+  @state()
+  public accordionContext = this;
+
+  public readonly accordions = [] as BuiLitAccordionComponent[];
   private _accordions: NodeListOf<BuiLitAccordionComponent> | null = null;
 
   constructor() {

@@ -59,36 +59,21 @@
   "targetDefaults": {
     "@nx/angular:package": {
       "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "default",
-        "^default"
-      ]
+      "dependsOn": ["^build"],
+      "inputs": ["default", "^default"]
     },
     "build-storybook": {
       "cache": true
     },
     "@nx/vite:build": {
       "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "default",
-        "^default"
-      ]
+      "dependsOn": ["^build"],
+      "inputs": ["default", "^default"]
     },
     "@angular-devkit/build-angular:application": {
       "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "default",
-        "^default"
-      ]
+      "dependsOn": ["^build"],
+      "inputs": ["default", "^default"]
     }
   },
   "release": {
@@ -96,5 +81,6 @@
       "preVersionCommand": "npx nx run-many -t build"
     }
   },
-  "nxCloudId": "67330c4d99097ed474659db1"
+  "nxCloudId": "67330c4d99097ed474659db1",
+  "useLegacyCache": true
 }

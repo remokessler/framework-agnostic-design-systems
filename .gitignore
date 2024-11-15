@@ -133,3 +133,5 @@ dist
 .angular
 .nx
 .verdaccio/
+
+vite.config.*.timestamp*

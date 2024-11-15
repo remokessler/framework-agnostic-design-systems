@@ -15,10 +15,6 @@ export class BuiLitAccordionComponent extends LitElement {
   private _accordionGroup?: IAccordionGroup;
   private _accordion: HTMLDetailsElement | null = null;
 
-  constructor() {
-    super();
-  }
-
   private _open = false;
 
   public get open(): boolean {

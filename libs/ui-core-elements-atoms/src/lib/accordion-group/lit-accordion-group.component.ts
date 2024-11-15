@@ -17,10 +17,6 @@ export class BuiLitAccordionGroupComponent extends LitElement implements IAccord
 
   public accordions = [] as BuiLitAccordionComponent[];
 
-  constructor() {
-    super();
-  }
-
   public closeAllOthers(accordionTitle: string | null): void {
     this.accordions?.forEach((accordion) => {
       if (accordion.accordionTitle !== accordionTitle) {

@@ -1,6 +1,6 @@
 <bui-accordion [open]="accordionOpen()" title="Title">Content</bui-accordion>
 
-<bui-button (click)="accordionOpen.set(!accordionOpen())">Toggle from outside</bui-button>
+<bui-lit-button (click)="accordionOpen.set(!accordionOpen())" [text]="'Toggle accordion'"></bui-lit-button>
 
 <router-outlet></router-outlet>
 

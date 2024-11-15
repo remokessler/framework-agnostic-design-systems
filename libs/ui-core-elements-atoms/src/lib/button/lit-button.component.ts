@@ -6,17 +6,12 @@ import styles from '../../tailwind.scss?inline';
 export class BuiLitButtonComponent extends LitElement {
   public static override styles = [unsafeCSS(styles)];
   @property()
-  public version = 'STARTING';
-
-  constructor() {
-    super();
-  }
+  public text = "I'm a Lit-Button!";
 
   public override render() {
     return html` <button
-      @click=${() => alert(this.version)}
       class="bui-bg-blue-400 bui-rounded-md bui-px-4 bui-py-2 bui-cursor-pointer hover:bui-bg-blue-300 active:bui-bg-blue-500">
-      I'm a Lit-Button!
+      ${this.text}
     </button>`;
   }
 }

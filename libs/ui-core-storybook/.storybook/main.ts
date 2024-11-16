@@ -5,9 +5,7 @@ import { StorybookConfigVite } from '@storybook/builder-vite';
 
 const config: StorybookConfig & StorybookConfigVite = {
   stories: ['../**/*.stories.ts', '../**/*.mdx'],
-
-  staticDirs: ['../assets'],
-
+  
   addons: [
     getAbsolutePath('@storybook/addon-essentials'),
     getAbsolutePath('@storybook/addon-interactions'),

@@ -15,6 +15,9 @@
       "es2020",
       "dom"
     ],
+    "types": [
+      "node"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
@@ -30,9 +33,6 @@
       ],
       "@ui-core/styles": [
         "libs/ui-core-styles/src/index.ts"
-      ],
-      "ui-core-shared": [
-        "libs/ui-core-shared/src/index.ts"
       ]
     }
   },

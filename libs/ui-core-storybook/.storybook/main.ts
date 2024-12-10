@@ -5,7 +5,7 @@ import { StorybookConfigVite } from '@storybook/builder-vite';
 
 const config: StorybookConfig & StorybookConfigVite = {
   stories: ['../**/*.stories.ts', '../**/*.mdx'],
-  
+
   addons: [
     getAbsolutePath('@storybook/addon-essentials'),
     getAbsolutePath('@storybook/addon-interactions'),
@@ -41,7 +41,7 @@ const config: StorybookConfig & StorybookConfigVite = {
       },
       resolve: {
         alias: {
-          '@ui-core/elements-atoms': resolve(__dirname, '../../ui-core-elements-atoms/src/index.ts'),
+          '@ui-core/elements-atoms': resolve(__dirname, '../../../dist/libs/ui-core-elements-atoms/index.mjs'),
           '@ui-core/atoms': resolve(__dirname, '../../ui-core-atoms/src/index.ts'),
         },
       },

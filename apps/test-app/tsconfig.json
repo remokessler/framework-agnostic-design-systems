@@ -7,7 +7,21 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@ui-core/atoms": [
+        "libs/ui-core-atoms/src/index.ts"
+      ],
+      "@ui-core/elements-atoms": [
+        "dist/libs/ui-core-elements-atoms/index.mjs"
+      ],
+      "@ui-core/storybook": [
+        "libs/ui-core-storybook/src/index.ts"
+      ],
+      "@ui-core/styles": [
+        "libs/ui-core-styles/src/index.ts"
+      ]
+    }
   },
   "files": [],
   "include": [],

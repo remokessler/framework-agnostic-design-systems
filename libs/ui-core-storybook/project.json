@@ -6,25 +6,6 @@
   "projectType": "library",
   "tags": [],
   "targets": {
-    "build": {
-      "executor": "@nx/angular:package",
-      "outputs": [
-        "{workspaceRoot}/dist/{projectRoot}"
-      ],
-      "options": {
-        "project": "libs/ui-core-storybook/ng-package.json",
-        "tailwindConfig": "libs/ui-core-storybook/tailwind.config.js"
-      },
-      "configurations": {
-        "production": {
-          "tsConfig": "libs/ui-core-storybook/tsconfig.lib.prod.json"
-        },
-        "development": {
-          "tsConfig": "libs/ui-core-storybook/tsconfig.lib.json"
-        }
-      },
-      "defaultConfiguration": "production"
-    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": [
@@ -51,7 +32,7 @@
         "command": "tailwindcss -i ./.storybook/styles.css -o ./.storybook/tailwind.css -c tailwind.config.js -w & storybook dev --port 8800 && fg"
       }
     },
-    "build-storybook": {
+    "build": {
       "executor": "nx:run-commands",
       "options": {
         "cwd": "libs/ui-core-storybook",

@@ -1,4 +1,4 @@
-<bui-accordion [open]="accordionOpen()" title="Title">Content</bui-accordion>
+<bui-accordion (openChange)="accordionOpen.set($event)" [open]="accordionOpen()" title="Title">Content</bui-accordion>
 
 <bui-lit-button (click)="accordionOpen.set(!accordionOpen())" [text]="'Toggle accordion'"></bui-lit-button>
 

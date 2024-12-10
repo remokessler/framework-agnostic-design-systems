@@ -7,13 +7,12 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@nx/angular:package",
-      "outputs": [
-        "{workspaceRoot}/dist/{projectRoot}"
-      ],
+      "executor": "@nx/js:tsc",
       "options": {
-        "project": "libs/ui-core-styles/ng-package.json",
-        "tailwindConfig": "libs/ui-core-styles/tailwind.config.js"
+        "main": "libs/ui-core-styles/src/index.ts",
+        "tsConfig": "libs/ui-core-styles/tsconfig.lib.json",
+        "outputPath": "dist/libs/ui-core-styles",
+        "rootDir": "libs/ui-core-styles/src"
       },
       "configurations": {
         "production": {

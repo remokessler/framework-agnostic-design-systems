@@ -4,7 +4,7 @@ import { BuiAccordionComponent } from '@ui-core/atoms';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, BuiAccordionComponent],
+  imports: [RouterModule, BuiAccordionComponent, BuiAccordionComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

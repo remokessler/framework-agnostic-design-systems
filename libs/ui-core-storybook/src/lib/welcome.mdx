@@ -1,6 +1,9 @@
 import { Canvas, Meta } from '@storybook/addon-docs';
-import * as LitStories from './lit-button.stories';
-import * as AngularStories from './angular-button.stories';
+import * as LitButtonStories from './lit-button.stories';
+import * as LitAccordionStories from './lit-accordion.stories';
+import * as LitAccordionGroupStories from './lit-accordion-group.stories';
+import * as AngularButtonStories from './angular-button.stories';
+import * as AngularAccordionStories from './angular-accordion.stories';
 
 <Meta title="Welcome" />
 
@@ -10,8 +13,11 @@ This is a storybook for the `ui-core` library.
 
 # Angular
 
-<Canvas of={AngularStories.Default} meta={AngularStories} />
+<Canvas of={AngularButtonStories.Default} meta={AngularButtonStories} sourceState={'shown'} />
+<Canvas of={AngularAccordionStories.Default} meta={AngularAccordionStories} sourceState={'shown'} />
 
 # Lit
 
-<Canvas of={LitStories.Default} meta={LitStories} />
+<Canvas of={LitButtonStories.Default} meta={LitButtonStories} sourceState={'shown'} />
+<Canvas of={LitAccordionStories.Default} meta={LitAccordionStories} sourceState={'shown'} />
+<Canvas of={LitAccordionGroupStories.Default} meta={LitAccordionGroupStories} sourceState={'shown'} />

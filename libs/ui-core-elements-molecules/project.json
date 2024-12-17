@@ -1,0 +1,39 @@
+{
+  "name": "ui-core-elements-molecules",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui-core-elements-molecules/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": [
+    "ui-core-elements-atoms"
+  ],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/libs/ui-core-elements-molecules",
+        "main": "libs/ui-core-elements-molecules/src/index.ts",
+        "tsConfig": "libs/ui-core-elements-molecules/tsconfig.lib.json",
+        "assets": [
+          "libs/ui-core-elements-molecules/*.md"
+        ]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ export class BuiLitButtonComponent extends LitElement {
 
   public override render() {
     return html` <button
-      class="bui-bg-blue-400 bui-rounded-md bui-px-4 bui-py-2 bui-cursor-pointer hover:bui-bg-blue-300 active:bui-bg-blue-500">
+      class="bui-bg-blue-400 bui-rounded-md bui-px-4 bui-py-1 bui-cursor-pointer hover:bui-bg-blue-300 active:bui-bg-blue-500">
       ${this.text}
     </button>`;
   }

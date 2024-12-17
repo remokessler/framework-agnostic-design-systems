@@ -12,15 +12,22 @@
     }
   },
   "tags": [],
+  "implicitDependencies": [
+    "ui-core-elements-atoms"
+  ],
   "targets": {
     "build": {
       "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/libs/ui-core-elements-atoms",
         "main": "libs/ui-core-elements-atoms/src/index.ts",
         "tsConfig": "libs/ui-core-elements-atoms/tsconfig.lib.json",
-        "assets": ["libs/ui-core-elements-atoms/*.md"]
+        "assets": [
+          "libs/ui-core-elements-atoms/*.md"
+        ]
       }
     },
     "nx-release-publish": {

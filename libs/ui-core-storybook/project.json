@@ -27,6 +27,9 @@
     },
     "storybook": {
       "executor": "nx:run-commands",
+      "dependsOn": [
+        "^build"
+      ],
       "options": {
         "cwd": "libs/ui-core-storybook",
         "command": "tailwindcss -i ./.storybook/styles.css -o ./.storybook/tailwind.css -c tailwind.config.js -w & storybook dev --port 8800 && fg"

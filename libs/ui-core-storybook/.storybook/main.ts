@@ -43,6 +43,7 @@ const config: StorybookConfig & StorybookConfigVite = {
         alias: {
           '@ui-core/elements-atoms': resolve(__dirname, '../../../dist/libs/ui-core-elements-atoms/index.mjs'),
           '@ui-core/atoms': resolve(__dirname, '../../ui-core-atoms/src/index.ts'),
+          '@ui-core/elements-molecules': resolve(__dirname, '../../../dist/libs/ui-core-elements-molecules/index.mjs'),
         },
       },
       plugins: [angular({ jit: true, tsconfig: './.storybook/tsconfig.json', include: ['./tailwind.scss'] })],

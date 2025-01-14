@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "sb": "npx nx run ui-core-storybook:storybook",
-    "test-app": "npx nx run test-app:serve",
+    "test-app": "npx nx run test-app:serve && npx nx run ui-core-elements-atoms:serve",
     "format": "npx nx format:write",
     "build": "npx nx affected:build --base=main --parallel=8",
     "build:prod": "npx nx affected:build --base=main --parallel=8 --prod"

@@ -1,0 +1,20 @@
+{
+  "name": "test-react",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "test-react/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "./apps/test-react",
+        "commands": [
+          {
+            "command": "vite serve"
+          }
+        ]
+      }
+    }
+  }
+}

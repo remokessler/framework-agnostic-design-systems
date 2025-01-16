@@ -11,60 +11,26 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
-    "types": [
-      "node"
-    ],
+    "lib": ["es2020", "dom"],
+    "types": ["node"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ui-core/atoms": [
-        "libs/ui-core-atoms/src/index.ts"
-      ],
-      "@ui-core/elements-atoms": [
-        "libs/ui-core-elements-atoms/src/index.ts"
-      ],
-      "@ui-core/elements-molecules": [
-        "libs/ui-core-elements-molecules/src/index.ts"
-      ],
-      "@ui-core/elements-organisms": [
-        "libs/ui-core-elements-organisms/src/index.ts"
-      ],
-      "@ui-core/elements-templates": [
-        "libs/ui-core-elements-templates/src/index.ts"
-      ],
-      "@ui-core/elements-pages": [
-        "libs/ui-core-elements-pages/src/index.ts"
-      ],
-      "@ui-core/molecules": [
-        "libs/ui-core-molecules/src/index.ts"
-      ],
-      "@ui-core/organisms": [
-        "libs/ui-core-organisms/src/index.ts"
-      ],
-      "@ui-core/pages": [
-        "libs/ui-core-pages/src/index.ts"
-      ],
-      "@ui-core/storybook": [
-        "libs/ui-core-storybook/src/index.ts"
-      ],
-      "@ui-core/styles": [
-        "libs/ui-core-styles/src/index.ts"
-      ],
-      "@ui-core/templates": [
-        "libs/ui-core-templates/src/index.ts"
-      ]
+      "@ui-core/atoms": ["libs/ui-core-atoms/src/index.ts"],
+      "@ui-core/elements-atoms": ["libs/ui-core-elements-atoms/src/index.ts"],
+      "@ui-core/elements-molecules": ["libs/ui-core-elements-molecules/src/index.ts"],
+      "@ui-core/elements-organisms": ["libs/ui-core-elements-organisms/src/index.ts"],
+      "@ui-core/elements-pages": ["libs/ui-core-elements-pages/src/index.ts"],
+      "@ui-core/elements-templates": ["libs/ui-core-elements-templates/src/index.ts"],
+      "@ui-core/molecules": ["libs/ui-core-molecules/src/index.ts"],
+      "@ui-core/organisms": ["libs/ui-core-organisms/src/index.ts"],
+      "@ui-core/pages": ["libs/ui-core-pages/src/index.ts"],
+      "@ui-core/storybook": ["libs/ui-core-storybook/src/index.ts"],
+      "@ui-core/styles": ["libs/ui-core-styles/src/index.ts"],
+      "@ui-core/templates": ["libs/ui-core-templates/src/index.ts"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ],
-  "include": [
-    "types.d.ts"
-  ]
+  "exclude": ["node_modules", "tmp"],
+  "include": ["types.d.ts"]
 }

@@ -1,0 +1,58 @@
+{
+  "name": "ui-core-elements-pages",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui-core-elements-pages/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": [
+    "ui-core-elements-atoms",
+    "ui-core-elements-molecules",
+    "ui-core-elements-organisms",
+    "ui-core-elements-templates",
+    "ui-core-styles"
+  ],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/libs/ui-core-elements-pages",
+        "main": "libs/ui-core-elements-pages/src/index.ts",
+        "tsConfig": "libs/ui-core-elements-pages/tsconfig.lib.json",
+        "assets": [
+          "libs/ui-core-elements-pages/*.md"
+        ]
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:build",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/libs/ui-core-elements-pages",
+        "main": "libs/ui-core-elements-pages/src/index.ts",
+        "tsConfig": "libs/ui-core-elements-pages/tsconfig.lib.json",
+        "assets": [
+          "libs/ui-core-elements-pages/*.md"
+        ],
+        "watch": true
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  }
+}

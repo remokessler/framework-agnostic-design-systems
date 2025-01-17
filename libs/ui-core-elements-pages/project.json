@@ -22,30 +22,22 @@
   "targets": {
     "build": {
       "executor": "@nx/vite:build",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/ui-core-elements-pages",
         "main": "libs/ui-core-elements-pages/src/index.ts",
         "tsConfig": "libs/ui-core-elements-pages/tsconfig.lib.json",
-        "assets": [
-          "libs/ui-core-elements-pages/*.md"
-        ]
+        "assets": ["libs/ui-core-elements-pages/*.md"]
       }
     },
     "serve": {
       "executor": "@nx/vite:build",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/ui-core-elements-pages",
         "main": "libs/ui-core-elements-pages/src/index.ts",
         "tsConfig": "libs/ui-core-elements-pages/tsconfig.lib.json",
-        "assets": [
-          "libs/ui-core-elements-pages/*.md"
-        ],
+        "assets": ["libs/ui-core-elements-pages/*.md"],
         "watch": true
       }
     },

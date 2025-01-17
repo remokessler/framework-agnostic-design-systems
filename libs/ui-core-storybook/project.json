@@ -8,9 +8,7 @@
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
         "jestConfig": "libs/ui-core-storybook/jest.config.ts"
       }
@@ -27,9 +25,7 @@
     },
     "storybook": {
       "executor": "nx:run-commands",
-      "dependsOn": [
-        "^build"
-      ],
+      "dependsOn": ["^build"],
       "options": {
         "cwd": "libs/ui-core-storybook",
         "command": "tailwindcss -i ./.storybook/styles.css -o ./.storybook/tailwind.css -c tailwind.config.js -w & storybook dev --port 8800 && fg"
@@ -50,9 +46,7 @@
     },
     "static-storybook": {
       "executor": "@nx/web:file-server",
-      "dependsOn": [
-        "build-storybook"
-      ],
+      "dependsOn": ["build-storybook"],
       "options": {
         "buildTarget": "ui-core-storybook:build-storybook",
         "staticFilePath": "dist/storybook/ui-core-storybook",

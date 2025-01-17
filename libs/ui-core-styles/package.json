@@ -2,7 +2,8 @@
   "name": "@ui-core/styles",
   "version": "0.0.1",
   "peerDependencies": {
-    "tailwindcss": "^3.4.15"
+    "tailwindcss": "^3.4.3",
+    "tslib": "^2.7.0"
   },
   "sideEffects": false
 }

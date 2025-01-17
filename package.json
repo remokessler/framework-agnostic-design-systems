@@ -9,7 +9,8 @@
     "test-vue": "npx nx run test-vue:serve",
     "format": "npx nx format:write",
     "build": "npx nx affected:build --base=main --parallel=8",
-    "build:prod": "npx nx affected:build --base=main --parallel=8 --prod"
+    "build:prod": "npx nx affected:build --base=main --parallel=8 --prod",
+    "lint": "npx nx affected:lint --base=main --parallel=8"
   },
   "private": true,
   "devDependencies": {

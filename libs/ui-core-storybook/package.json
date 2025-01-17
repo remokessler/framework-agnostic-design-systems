@@ -2,8 +2,20 @@
   "name": "@ui-core/storybook",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^18.2.0",
-    "@angular/core": "^18.2.0"
+    "@angular/core": "^18.2.0",
+    "@angular/forms": "^18.2.0",
+    "@storybook/angular": "^8.4.4",
+    "vite": "^5.0.0",
+    "@storybook/builder-vite": "8.4.4",
+    "tailwindcss": "3.4.3",
+    "autoprefixer": "^10.4.13",
+    "jest-preset-angular": "~14.1.0",
+    "@nx/angular": "^20.1.1",
+    "@analogjs/vite-plugin-angular": "^1.8.0",
+    "@ui-core/elements-atoms": "^0.0.1",
+    "@ui-core/atoms": "^0.0.1",
+    "@ui-core/elements-molecules": "^0.0.1",
+    "@ui-core/styles": "^0.0.1"
   },
   "sideEffects": false
 }

@@ -1,7 +1,10 @@
 {
   "name": "@ui-core/elements-molecules",
   "version": "0.0.1",
-  "dependencies": {},
+  "peerDependencies": {
+    "lit": "^3.2.0",
+    "@ui-core/styles": "^0.0.1"
+  },
   "main": "./index.js",
   "module": "./index.mjs",
   "typings": "./index.d.ts"

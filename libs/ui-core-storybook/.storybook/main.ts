@@ -6,13 +6,6 @@ import { StorybookConfigVite } from '@storybook/builder-vite';
 const config: StorybookConfig & StorybookConfigVite = {
   stories: ['../**/*.stories.ts', '../**/*.mdx'],
 
-  addons: [
-    getAbsolutePath('@storybook/addon-essentials'),
-    getAbsolutePath('@storybook/addon-interactions'),
-    getAbsolutePath('@storybook/addon-mdx-gfm'),
-    '@chromatic-com/storybook',
-  ],
-
   core: {
     builder: {
       name: '@storybook/builder-vite',
